@@ -44,6 +44,7 @@ jobs:
 
       - name: Install Haxelib
         run: |
+          haxelib remove linc_luajit
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null
           haxelib install lime
